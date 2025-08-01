@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidhardha K | Freelance Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+  <style>
+    html.dark {
+      background-color: #0f172a;
+      color: white;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-sans transition-colors duration-300 bg-white dark:bg-gray-900 dark:text-white">
+
+  <!-- Header -->
+  <header class="p-6 flex justify-between items-center border-b dark:border-gray-700">
+    <h1 class="text-2xl font-bold tracking-tight">Sidhardha K</h1>
+    <button onclick="toggleTheme()" class="bg-gray-200 dark:bg-gray-700 text-sm px-4 py-2 rounded hover:shadow transition-all">
+      Toggle Theme
+    </button>
+  </header>
+
+  <main class="p-6 max-w-5xl mx-auto space-y-20">
+
+    <!-- Intro Section -->
+    <section class="text-center fade-in">
+      <img src="your-photo.jpg" alt="Sidhardha K" class="w-32 h-32 rounded-full mx-auto shadow-md mb-4 object-cover">
+      <h2 class="text-3xl font-semibold mb-4">Turning Ideas Into Impact</h2>
+      <p class="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
+        Hi, I'm <strong>Sidhardha K</strong> — a passionate B.Tech student and freelance enthusiast. I created this portfolio to
+        connect with future clients and grow as a creative problem solver. I love transforming ideas into meaningful digital
+        solutions, and I’m always eager to learn and collaborate.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="fade-in">
+      <h2 class="text-2xl font-semibold mb-6 border-b pb-2 dark:border-gray-700">Upcoming Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project card -->
+        <div class="p-4 border rounded shadow-sm dark:border-gray-600 hover:shadow-md transition duration-300 transform hover:-translate-y-1">
+          <h3 class="text-xl font-bold mb-2">Project Title</h3>
+          <p class="text-gray-600 dark:text-gray-400 text-sm">
+            Brief description of the project. Replace this block to add real projects.
+          </p>
+        </div>
+        <!-- More cards can be added here -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="fade-in">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2 dark:border-gray-700">Contact Me</h2>
+      <p class="mb-2 text-lg">Want to work together or have a question? Let’s connect!</p>
+      <ul class="space-y-2 text-blue-600 dark:text-blue-400">
+        <li>Email: <a href="mailto:editorsidhardh@gmail.com">editorsidhardh@gmail.com</a></li>
+        <li>GitHub: <a href="#">yourusername</a></li>
+        <li>LinkedIn: <a href="#">yourprofile</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm py-6 text-gray-500 dark:text-gray-400 border-t dark:border-gray-700 fade-in">
+    &copy; 2025 Sidhardha K. All rights reserved.
+  </footer>
+
+</body>
+</html>
